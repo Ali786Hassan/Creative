@@ -1,12 +1,9 @@
-import { View, Text } from 'react-native'
 import React from 'react'
+import Home from './App/Screens/Home';
 
-const App = () => {
+export default function App() {
   return (
-    <View style={{flex:1,backgroundColor:'#fff',justifyContent:'center',alignItems:'center'}}>
-      <Text>App</Text>
-    </View>
+    <Home></Home>
   )
 }
 
-export default App
