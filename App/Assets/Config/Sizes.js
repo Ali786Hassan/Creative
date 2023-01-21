@@ -1,3 +1,5 @@
+import { Dimensions } from "react-native";
+const { width, height } = Dimensions.get("window");
 export const sizes = {
     // global sizes
     base: 8,
@@ -20,5 +22,5 @@ export const sizes = {
 
     // app dimensions
     width,
-    height
+    height,
 };
