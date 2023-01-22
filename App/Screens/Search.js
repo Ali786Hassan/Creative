@@ -1,12 +1,13 @@
-import { View, Text } from 'react-native'
+import { SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Search = () => {
+
+export default function Search() {
   return (
-    <View>
-      <Text>Search</Text>
-    </View>
+    <SafeAreaView style={{flex:1,backgroundColor:'#fff'}}>
+    
+    </SafeAreaView>
   )
 }
 
-export default Search;
+const styles = StyleSheet.create({})
