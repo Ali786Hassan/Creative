@@ -1,13 +1,15 @@
+import React from 'react';
 import { View, Text,StyleSheet,TouchableOpacity,Image,FlatList, SafeAreaView } from 'react-native';
 import colors from '../Assets/Config/colors';
 import Sizes from '../Assets/Config/Sizes';
-import React from 'react'
+
 
 
 export default function Home() {
 
   return (
-   <SafeAreaView style={styles.container}>
+   <SafeAreaView 
+    style={styles.container}>
        <View style={{ flexDirection:'row',height:50}}>
            <TouchableOpacity
               style={{
@@ -32,7 +34,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    backgroundColor: '#fff'
+    backgroundColor: '#e8e8e8'
   },
   shadow:{
     shadowColor:'#000',
