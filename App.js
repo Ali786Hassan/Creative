@@ -14,10 +14,11 @@ const App = () => {
          initialRouteName='Home'
         >
            <Stack.Screen name='Home' component={Tabs} options={{headerShown:false}}/>
-           <Stack.Screen name='Restaurant' component={Restaurant} options={{headerShown:false}}/>
-           <Stack.Screen name='OrderDelivery' component={OrderDelivery} options={{headerShown:false}}/>
+           <Stack.Screen name='Restaurant' component={Restaurant}/>
+           <Stack.Screen name='OrderDelivery' component={OrderDelivery}/>
         </Stack.Navigator>
       </NavigationContainer>
+      //<Home/>
   );
 };
 export default App;

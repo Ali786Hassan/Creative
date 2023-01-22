@@ -34,7 +34,7 @@ export default function Home() {
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    backgroundColor: '#e8e8e8'
+    backgroundColor: '#fff'
   },
   shadow:{
     shadowColor:'#000',

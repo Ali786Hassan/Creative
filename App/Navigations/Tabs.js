@@ -105,6 +105,7 @@ const Tabs = () => {
           name='Home'
           component={Home}
           options={{
+            headerShown:false,
             tabBarIcon: ({focused}) => (
                 <Image
                 source={require('../Assets/Icon/cutlery.png')}
@@ -127,6 +128,7 @@ const Tabs = () => {
           name='Search'
           component={Search}
           options={{
+            headerShown:false,
             tabBarIcon: ({focused}) => (
                 <Image
                 source={require('../Assets/Icon/search.png')}
@@ -149,6 +151,7 @@ const Tabs = () => {
           name='Like'
           component={Like}
           options={{
+            headerShown:false,
             tabBarIcon: ({focused}) => (
                 <Image
                 source={require('../Assets/Icon/like.png')}
@@ -171,6 +174,7 @@ const Tabs = () => {
           name='Profile'
           component={Profile}
           options={{
+            headerShown:false,
             tabBarIcon: ({focused}) => (
                 <Image
                 source={require('../Assets/Icon/user.png')}
