@@ -5,20 +5,21 @@ import Home from './App/Screens/Home';
 import Restaurant from './App/Screens/Restaurant';
 import OrderDelivery from './App/Screens/OrderDelivery';
 import Tabs from './App/Navigations/Tabs';
+import Login from './App/Screens/Login';
 const Stack = createStackNavigator();
 const App = () => {
   return (
-      <NavigationContainer>
-        <Stack.Navigator
-         screenOptions={{headerShown: false}}
-         initialRouteName='Home'
-        >
-           <Stack.Screen name='Home' component={Tabs} options={{headerShown:false}}/>
-           <Stack.Screen name='Restaurant' component={Restaurant}/>
-           <Stack.Screen name='OrderDelivery' component={OrderDelivery}/>
-        </Stack.Navigator>
-      </NavigationContainer>
-      //<Home/>
+      // <NavigationContainer>
+      //   <Stack.Navigator
+      //    screenOptions={{headerShown: false}}
+      //    initialRouteName='Home'
+      //   >
+      //      <Stack.Screen name='Home' component={Tabs} options={{headerShown:false}}/>
+      //      <Stack.Screen name='Restaurant' component={Restaurant}/>
+      //      <Stack.Screen name='OrderDelivery' component={OrderDelivery}/>
+      //   </Stack.Navigator>
+      // </NavigationContainer>
+      <Login/>
   );
 };
 export default App;
