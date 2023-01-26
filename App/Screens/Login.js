@@ -16,7 +16,7 @@ const Login = () => {
   const [lastName, onChangeLastName] = useState('');
   const [message, onChangeMessage] = useState('');
   const colorScheme = useColorScheme();
-  const {width, height , fontScale} = useWindowDimensions();
+  const {width, height , fontScale} = useWindowDimensions('window');
   return (
     <KeyboardAvoidingView
       style={styles.container}
@@ -26,14 +26,13 @@ const Login = () => {
         colorScheme === 'light'
         ? { backgroundColor: '#fff'}
         : { backgroundColor:'#333333'},
+        {height},{width},{fontScale}
       ]}
+      
       keyboardDismissMode="on-drag">
         <Text style={styles.headingSection}>
           How was your visit to Little Lemon?
-          Color Scheme: {colorScheme}
-          Height: {height}
-          Width: {width}
-          Font scale: {fontScale}
+            
         </Text>
         <Text style={styles.infoSection}>
           Little Lemon is a charming neighborhood bistro that serves simple food
