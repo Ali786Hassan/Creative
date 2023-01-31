@@ -6,6 +6,7 @@ import Restaurant from './App/Screens/Restaurant';
 import OrderDelivery from './App/Screens/OrderDelivery';
 import Tabs from './App/Navigations/Tabs';
 import Login from './App/Screens/Login';
+import Search from './App/Screens/Search';
 const Stack = createStackNavigator();
 const App = () => {
   return (
@@ -19,7 +20,7 @@ const App = () => {
       //      <Stack.Screen name='OrderDelivery' component={OrderDelivery}/>
       //   </Stack.Navigator>
       // </NavigationContainer>
-      <Login/>
+      <Search/>
   );
 };
 export default App;

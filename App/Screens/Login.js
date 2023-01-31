@@ -41,7 +41,14 @@ const Login = () => {
         </Text>
         <TextInput
         
-          style={styles.input}
+          style={[styles.input, 
+            colorScheme === 'light'
+          ? { backgroundColor: '#e8e8e8'}
+          : { backgroundColor:'#333333'},
+            colorScheme === 'light'
+          ? { borderColor:'#e8e8e8'}
+          : { borderColor:'#333333'},
+        ]}
           value={firstName}
           onChangeText={onChangeFirstName}
           placeholder='name'
@@ -49,14 +56,29 @@ const Login = () => {
           
         />
         <TextInput
-          style={styles.input}
+          style={[styles.input,
+            colorScheme === 'light'
+        ? { backgroundColor: '#e8e8e8'}
+        : { backgroundColor:'#333333'},
+           colorScheme === 'light'
+        ? { borderColor:'#e8e8e8'}
+        : { borderColor:'#333333'},
+          ]}
           value={lastName}
           placeholder='last name'
           clearButtonMode='always'
           onChangeText={onChangeLastName}
         />
         <TextInput
-          style={styles.messageInput}
+          style={[styles.messageInput,
+            colorScheme === 'light'
+        ? { backgroundColor: '#e8e8e8'}
+        : { backgroundColor:'#333333'},
+            colorScheme === 'light'
+        ? { borderColor:'#e8e8e8'}
+        : { borderColor:'#333333'},
+           
+          ]}
           value={message}
           onChangeText={onChangeMessage}
           placeholder='email'
@@ -81,7 +103,7 @@ const styles = StyleSheet.create({
     elevation:4,
     padding: 10,
     fontSize: 16,
-    backgroundColor: '#e8e8e8',
+    //backgroundColor: '#e8e8e8',
   },
   messageInput: {
     height: 100,
@@ -94,7 +116,7 @@ const styles = StyleSheet.create({
     elevation:4,
     padding: 10,
     fontSize: 16,
-    backgroundColor: '#e8e8e8',
+   // backgroundColor: '#e8e8e8',
   },
   infoSection: {
     fontSize: 24,

@@ -2,7 +2,10 @@ export const colors = {
     // base colors
     primary: "#FC6D3F", // orange
     secondary: "#CDCDD2",   // gray
-
+    blue1:'#5D5FEE',
+    grey:'#BABBC3',
+    light1:'#F3F4FB',
+    darkblue:'#797885',
     // colors
     black: "#1E1F20",
     white: "#FFFFFF",
